@@ -11,7 +11,66 @@ const mappingSchema  =  {
         },
         city: (el)=>{
             return el.t2.city;
+        },
+        employer: (el)=>{
+            return el.t2.employer;
+        },
+        location: (el)=>{
+            return el.t6.point;
+        },
+        createdAt: (el)=>{
+            return el.t2.createdAt;
         }
+    },
+    Post: {
+        objectId: (el)=>{
+            return el.t1.objectId;
+        },
+        text: (el)=>{
+            return el.t1.text;
+        },
+        author: (el)=>{
+            return el.t1.author;
+        },
+        createdAt: (el)=>{
+            return el.t1.createdAt;
+        }
+    },
+    City: {
+        objectId: (el)=>{
+            return el.t4.objectId;
+        },
+        name: (el)=>{
+            return el.t4.name;
+        },
+        country: (el)=>{
+            return el.t4.country;
+        },
+        createdAt: (el)=>{
+            return el.t4.createdAt;
+        }
+    },
+    Country: {
+        objectId: (el)=>{
+            return el.t5.objectId;
+        },
+        name: (el)=>{
+            return el.t5.name;
+        },
+        createdAt: (el)=>{
+            return el.t5.createdAt;
+        }
+    },
+    Category: {
+        objectId: (el)=>{
+            return el.t3.objectId;
+        },
+        name: (el)=>{
+            return el.t3.name;
+        },
+        createdAt: (el)=>{
+            return el.t3.createdAt;
+        }  
     }
 };
 
